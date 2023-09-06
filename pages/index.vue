@@ -1,6 +1,5 @@
 <template>
-  ksdjfgksgnf
-  <corbado-auth :project-id="pro-1386871885902856303" conditional="yes">
+  <corbado-auth :project-id="corbadoProjectID" conditional="yes">
     <input name="username" id="corbado-username" required autocomplete="webauthn"/>
   </corbado-auth>
 </template>
