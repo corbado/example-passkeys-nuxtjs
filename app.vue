@@ -1,4 +1,7 @@
+<script setup>
+import {RouterView} from 'vue-router'
+</script>
+
 <template>
-  <NuxtLink to="/">Home page</NuxtLink>
-  <NuxtLink to="/profile">Profile page</NuxtLink>
+  <RouterView/>
 </template>

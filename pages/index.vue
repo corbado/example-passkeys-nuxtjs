@@ -1,5 +1,5 @@
 <template>
-  <corbado-auth :project-id="pro-138687188590285630" conditional="yes">
+  <corbado-auth :project-id="corbadoProjectID" conditional="yes">
     <input name="username" id="corbado-username" required autocomplete="webauthn"/>
   </corbado-auth>
 </template>
