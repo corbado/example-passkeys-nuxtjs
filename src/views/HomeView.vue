@@ -1,6 +1,5 @@
 <template>
-  ksdjfgksgnf
-  <corbado-auth :project-id="pro-1386871885902856303" conditional="yes">
+  <corbado-auth :project-id="corbadoProjectID" conditional="yes">
     <input name="username" id="corbado-username" required autocomplete="webauthn"/>
   </corbado-auth>
 </template>
@@ -9,6 +8,8 @@
 import '@corbado/webcomponent/pkg/auth_cui.css'
 import '@corbado/webcomponent'
 import {ref} from 'vue'
+
+import crypto from 'crypto';
 
 const corbadoProjectID = ref(import.meta.env.VITE_CORBADO_PROJECT_ID)
 </script>
