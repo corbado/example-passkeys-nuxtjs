@@ -11,5 +11,11 @@
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "nuxt": "^3.7.1"
+  },
+  "dependencies": {
+    "@corbado/webcomponent": "^1.0.46",
+    "crypto": "^1.0.1",
+    "crypto-browserify": "^3.11.0",
+    "crypto-js": "^4.1.1"
   }
 }
