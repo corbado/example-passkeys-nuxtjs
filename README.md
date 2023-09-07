@@ -4,7 +4,7 @@ This is a sample implementation of the Corbado web component being integrated in
 
 ## File structure
 
-- `app.vue`: Entrypoint for the Vue.js web app
+- `app.vue`: Entrypoint for the Nuxt.js web app
 - `pages/index.vue`: component for the sign up / login screen
 - `pages/profile.vue`: component for the user profile information that is shown after successful authentication
 
