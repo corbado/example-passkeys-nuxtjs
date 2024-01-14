@@ -1,6 +1,8 @@
-# Complete passkeys integration example for Nuxt.js with Corbado
+# Passkey-First Authentication with Nuxt.js and Corbado
 
 This is a sample implementation of the Corbado web component being integrated into a web application built with Nuxt.js.
+
+Please see the [full blog post](https://www.corbado.com/blog/passkeys-nuxtjs) to understand the detailed steps needed to integrate passkeys into Nuxt.js apps.
 
 ## File structure
 
