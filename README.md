@@ -1,75 +1,36 @@
-# Nuxt 3 Minimal Starter
+# Passkey-First Authentication with Nuxt.js and Corbado
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This is a sample implementation of the Corbado UI component being integrated into a web application built with Nuxt.js.
+
+Please see the [full blog post](https://www.corbado.com/blog/passkeys-nuxtjs) to understand the detailed steps needed to integrate passkeys into Nuxt.js apps.
+
+## File structure
+
+- `layouts/default.vue`: Encapsulating layout handling Corbado project initialization
+- `pages/index.vue`: component for the sign up / login screen
+- `pages/profile.vue`: component for the user profile information that is shown after successful authentication
 
 ## Setup
 
-Make sure to install the dependencies:
+### Prerequisites
+
+Please follow the steps in [Getting started](https://docs.corbado.com/overview/getting-started) to create and configure
+a project in the [Corbado developer panel](https://app.corbado.com/signin#register).
+
+You need to have [Node](https://nodejs.org/en/download) and `npm` installed to run it.
+
+## Usage
+
+Run
 
 ```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
+npm i
 ```
 
-## Development Server
+to install all dependencies.
 
-Start the development server on `http://localhost:3000`:
+Finally, you can run the project locally with
 
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
