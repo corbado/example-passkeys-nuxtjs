@@ -1,13 +1,20 @@
-<template>
-  <corbado-auth :project-id="corbadoProjectID" conditional="yes">
-    <input name="username" id="corbado-username" required autocomplete="webauthn"/>
-  </corbado-auth>
-</template>
+<script setup lang="ts">
+  import Corbado from "@corbado/web-js"
+  import {onMounted} from "vue";
 
-<script setup>
-import '@corbado/webcomponent/pkg/auth_cui.css'
-import '@corbado/webcomponent'
-import {ref} from 'vue'
+  const authElement = useState<HTMLDivElement | undefined>('authElement', () => undefined)
 
-const corbadoProjectID = ref(import.meta.env.VITE_CORBADO_PROJECT_ID)
+  onMounted(() => {
+    if (authElement.value) {
+      Corbado.mountAuthUI(authElement.value, {
+        onLoggedIn: () => {
+          navigateTo("/profile")
+        },
+      })
+    }
+  })
 </script>
+
+<template>
+  <div ref="authElement"></div>
+</template>
