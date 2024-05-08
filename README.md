@@ -1,12 +1,12 @@
 # Passkey-First Authentication with Nuxt.js and Corbado
 
-This is a sample implementation of the Corbado web component being integrated into a web application built with Nuxt.js.
+This is a sample implementation of the Corbado UI component being integrated into a web application built with Nuxt.js.
 
 Please see the [full blog post](https://www.corbado.com/blog/passkeys-nuxtjs) to understand the detailed steps needed to integrate passkeys into Nuxt.js apps.
 
 ## File structure
 
-- `app.vue`: Entrypoint for the Nuxt.js web app
+- `layouts/default.vue`: Encapsulating layout handling Corbado project initialization
 - `pages/index.vue`: component for the sign up / login screen
 - `pages/profile.vue`: component for the user profile information that is shown after successful authentication
 
